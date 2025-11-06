@@ -1,235 +1,130 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Profile Card</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-  <div class="card">
-    <div class="top-section"></div>
-    <img class="profile-img" src="D:\Downloads\portifolio 3.jpg" alt="Portifolio Profile">
-    <h2>Alaa Ahmed Taha</h2>
-    <p class="role"><b>Front-End Developer<br>Data Analysis Trainee</b></p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/alaa-ahmed-501a95327utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/share/15JHXot4HK/" target=""><i class="fab fa-facebook"></i></a>
-      <a href="https://github.com/alaa345" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-    <div class="buttons">
-      <button class="subscribe">Subscribe</button>
-      <button class="message">Message</button>
-    </div>
-    <div class="stats">
-      <div><i class="fas fa-heart"></i>100</div>
-      <div><i class="fas fa-comment"></i>30</div>
-    </div>
-  </div>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>My portifolio</title>
-  <style>
-    body {
-      font-family:'Roboto Slab', serif;
-      background-color: #d0cdcd;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .card {
-      background-color: white;
-      width: 500px;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .top-section {
-      background-color: #5f1084;
-      height: 100px;
-      position: relative;
-    }
-    .card img {
-      width: 130px;
-      border-radius: 50%;
-      border: 2px solid #7a7878;
-    }
-    .card h2 {
-      font-size: 30px;
-      margin: 15px 0 5px;
-    }
-    .card p {
-      font-size: 17px;
-      color: #454545;
-      margin: 5px 0 20px;
-    
-    }
-    
-    .card a {
-      display: inline-block;
-      text-decoration: none;
-      padding: 10px 20px;
-      margin: 10px;
-      border-radius: 20px;
-      font-weight: bold;
-      font-size: 15px;
-      color: white;
-    }
-    .Subscribe {
-      background-color: #5f1084;
-    }
-    .Message {
-      background-color: #f68fde;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="card">
-    <img src="D:\Downloads\portifolio 3.jpg" alt="Profile">
-    <h2>Alaa Ahmed Taha</h2>
-    <p><b>Front-End Developer<br>Data Analysis Trainee</b></p>
-
-    <a href="#" class="Subscribe">Subscribe</a>
-    <a href="#" class="Message">Message</a>
-  </div>
-
-</body>
-</html>
- -->
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>My portfolio card</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64,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">
-  <link href="https://fonts.google.com/specimen/Roboto+Slab" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      background-color: #d0cdcd;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .card {
-      background-color: white;
-      width: 500px;
-      text-align: center;
-    }
-    .top-section {
-      background-color: #5f1084;
-      height: 100px;
-      position: relative;
-    }
-    .profile-img {
-      width: 130px;
-      border-radius: 50%;
-      border: 3px solid white;
-      margin-top: -65px;
-      position: relative;
-      z-index: 1;
-    }
-    h2 {
-      font-size: 30px;
-      margin: 15px 2 5px;
-    }
-    .role {
-      font-size: 17px;
-      color: #454545;
-      margin-bottom: 15px;
-    }
-    .social-icons {
-      margin: 15px 0;
-    }
-    .social-icons a {
-      color: #000000;
-      font-size: 20px;
-      margin: 2 10px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .social-icons a:hover {
-      color: #3f3d3f;
-    }
-    .buttons {
-      margin: 15px 0;
-    }
-    .subscribe,
-    .message {
-      border: none;
-      padding: 10px 20px;
-      border-radius: 20px;
-      margin: 10px;
-      font-weight: bold;
-      font-size: 15px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .subscribe {
-      background: #5f1084;
-      color: white;
-    }
-    .subscribe:hover {
-      background: #7d2aa8;
-    }
-    .message {
-      background: #f68fde;
-      color: white;
-    }
-    .message:hover {
-      background: #ffacec;
-    }
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      padding: 15px;
-      border-top: 1px solid #eee;
-      font-size: 17px;
-      color: #000;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaa Ahmed Taha Abd El-Razek - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="card">
-    <div class="top-section"></div>
-    <img class="profile-img" src="images/portifolio3.png" alt="Portfolio Profile">
-    <h2>Alaa Ahmed Taha</h2>
-    <p class="role"><b>Front-End Developer<br>Data Analysis Trainee</b></p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/alaa-ahmed-501a95327" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/alaa345" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.facebook.com/share/15JHXot4HK/" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
-    <div class="buttons">
-      <button class="subscribe">Subscribe</button>
-      <button class="message">Message</button>
-    </div>
-    <div class="stats">
-      <div><i class="fas fa-heart"></i> 100</div>
-      <div><i class="fas fa-comment"></i> 30</div>
-    </div>
-  </div>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>Alaa Ahmed Taha Abd El-Razek</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <h2>About Me</h2>
+            <p>A motivated first-year Computer Science student with foundational programming skills and a strong
+                interest in the world of data, eager to apply knowledge through hands-on initiatives and internships.
+            </p>
+            <p>Interests: Drawing and design.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Science in Computer Science and Artificial Intelligence, Cairo University (2024 - 2028)
+                </li>
+                <li>GPA: 3.55/4.0</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Languages: Python, C++, HTML, CSS, JavaScript</li>
+                <li>Tools: Microsoft Office (Word, PowerPoint, Excel), Canva, Sway</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication, Leadership, Teamwork, Problem-solving</li>
+            </ul>
+            <h3>Languages</h3>
+            <ul>
+                <li>Arabic (Native)</li>
+                <li>English (B2)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+                <h3>Internship – Data Analysis at Elevvo Tech Company (September 2025)</h3>
+                <p>Gained hands-on experience collecting, cleaning, and analyzing business data to generate insights
+                    using SQL, Excel, and data visualization.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Data Analysis Trainee in DEPI (June 2025)</h3>
+                <p>Applied SQL, Excel, and visualization tools to solve real business problems with teamwork and
+                    automation.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Front-end Trainee (May 2025)</h3>
+                <p>Built web pages using HTML & CSS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li>Portfolio website using HTML and CSS.</li>
+                <li>Mealify website clone (HTML, CSS).</li>
+                <li>Business dashboards using Excel.</li>
+                <li>ERD models for databases.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:alaaahmedtaha123@gmail.com">alaaahmedtaha123@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/alaa-ahmed-501a95327" target="_blank">Profile Link</a></p>
+
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alaa Ahmed Taha Abd El-Razek. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
